@@ -9,7 +9,7 @@ class Face_Recognition_System:
         self.root.title("face Recognition System")
         
         #first image
-        img=Image.open(r"D:\Face Recognition Project file\College images/sgs.jpg")
+        img=Image.open(r"D:\Face Recognition Project file\College images/face2.jpg")
         img = img.resize((500, 130), Image.LANCZOS)
         self.photoimg=ImageTk.PhotoImage(img)
 
@@ -17,7 +17,7 @@ class Face_Recognition_System:
         f_lbl.place(x=0,y=0,width=500,height=130)
 
         #Second image
-        img1=Image.open(r"D:\Face Recognition Project file\College images/sgslogo.jpg")
+        img1=Image.open(r"D:\Face Recognition Project file\College images/face1.jpg")
         img1 = img1.resize((500, 130), Image.LANCZOS)
         self.photoimg1=ImageTk.PhotoImage(img1)
 
@@ -25,7 +25,7 @@ class Face_Recognition_System:
         f_lbl.place(x=500,y=0,width=500,height=130)
 
         #Third image
-        img2=Image.open(r"D:\Face Recognition Project file\College images/SGSCollege.jpg")
+        img2=Image.open(r"D:\Face Recognition Project file\College images/face2.jpg")
         img2 = img2.resize((500, 130), Image.LANCZOS)
         self.photoimg2=ImageTk.PhotoImage(img2)
 
@@ -105,7 +105,7 @@ class Face_Recognition_System:
         img9 = img9.resize((220, 220), Image.LANCZOS)
         self.photoimg9=ImageTk.PhotoImage(img9)
 
-        b1=Button(bg_img,image=self.photoimg8,cursor="hand2")
+        b1=Button(bg_img,image=self.photoimg9,cursor="hand2")
         b1.place(x=500,y=380,width=220,height=220)
 
         b1_1=Button(bg_img,text="Photos",cursor="hand2",font=("times new roman",15,"bold"),bg="darkblue",fg="white")
@@ -115,30 +115,30 @@ class Face_Recognition_System:
 
 
         #developer button
-        img10=Image.open(r"D:\Face Recognition Project file\College images/background.jpg")
+        img10=Image.open(r"D:\Face Recognition Project file\College images/developer.jpg")
         img10 = img10.resize((220, 220), Image.LANCZOS)
         self.photoimg10=ImageTk.PhotoImage(img10)
 
-        b1=Button(bg_img,image=self.photoimg,cursor="hand2")
-        b1.place(x=200,y=380,width=220,height=220)
+        b1=Button(bg_img,image=self.photoimg10,cursor="hand2")
+        b1.place(x=800,y=380,width=220,height=220)
 
         b1_1=Button(bg_img,text="Developer",cursor="hand2",font=("times new roman",15,"bold"),bg="darkblue",fg="white")
-        b1_1.place(x=200,y=580,width=220,height=40)
+        b1_1.place(x=800,y=580,width=220,height=40)
 
 
 
 
 
         #Exit  button
-        img11=Image.open(r"D:\Face Recognition Project file\College images/background.jpg")
+        img11=Image.open(r"D:\Face Recognition Project file\College images/exit.png")
         img11 = img11.resize((220, 220), Image.LANCZOS)
         self.photoimg11=ImageTk.PhotoImage(img11)
 
-        b1=Button(bg_img,image=self.photoimg4,cursor="hand2")
-        b1.place(x=200,y=380,width=220,height=220)
+        b1=Button(bg_img,image=self.photoimg11,cursor="hand2")
+        b1.place(x=1100,y=380,width=220,height=220)
 
         b1_1=Button(bg_img,text="Exit",cursor="hand2",font=("times new roman",15,"bold"),bg="darkblue",fg="white")
-        b1_1.place(x=200,y=580,width=220,height=40)
+        b1_1.place(x=1100,y=580,width=220,height=40)
         
         
         
